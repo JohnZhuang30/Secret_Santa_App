@@ -87,8 +87,8 @@ def main():
             st.error("Enter at least two names")
         else:
             # Generate random match
-            if len(st.session_state.matches) == 0:
-                st.session_state.matches = match_names(st.session_state.names)
+            #if len(st.session_state.matches) == 0:
+            st.session_state.matches = match_names(st.session_state.names)
 
             # Display matching result
             person = list(st.session_state.matches.keys())[st.session_state.current_person_index]
