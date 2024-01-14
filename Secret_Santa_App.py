@@ -97,6 +97,7 @@ def main():
                 st.write(f"**{person}'s match:**")
             else:
                 st.write(f"**{person}'s match is {match}**")
+                st.balloons()
             
             if st.session_state.current_person_index < st.session_state.num_names - 1:
                 if st.button("Show Result", key=f"show_{st.session_state.current_person_index}"):
